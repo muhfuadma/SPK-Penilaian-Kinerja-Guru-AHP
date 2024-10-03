@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6705bb92-1251-4825-8992-9445a718cb64">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="137"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tb_kriteria]]>
+	</queryString>
+	<field name="kode_kriteria" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_kriteria" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="103" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="129" height="103" uuid="a4bca2aa-9f9e-49c3-8dd4-bd2062b71b63"/>
+				<imageExpression><![CDATA["C:\\Users\\ASUS\\OneDrive\\Documents\\NetBeansProjects\\ProjectTA\\src\\Gambar\\logo smk yappa.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="139" y="35" width="312" height="33" uuid="4b64b6db-64e6-451d-a664-8e255de9bf40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMK YAPPA DEPOK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="68" width="264" height="35" uuid="8168f1f1-d449-4234-b3b3-498b42d7ef58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Jl. Proklamasi Gg. Majlis No.79 Kel. Abadijaya, Kec. Sukmajaya Kota Depok, Jawa Barat 16417]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="102" width="555" height="1" uuid="f2d0d173-7494-434b-8719-d9b32dc6a34e"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="764a1959-70f6-43cd-a301-8b4f6598b833"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Hal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="30" width="12" height="20" uuid="c1757e51-005c-4b0e-a8bb-5b859a0e3fc3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="30" width="100" height="20" uuid="6966d12d-a1ee-40ca-a697-056e813d4de7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="108" width="112" height="20" uuid="d846d7cd-6780-45dd-8ce3-2de6ec4f72a9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="13"/>
+				</textElement>
+				<text><![CDATA[DATA KRITERIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="128" width="153" height="20" uuid="e216e4ad-b276-45ee-853c-6254da88dd78"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="13"/>
+				</textElement>
+				<text><![CDATA[TAHUN 2024/2025]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="198" y="9" width="100" height="20" uuid="cf8497d0-2fd0-43fa-a040-7751156ba5f0"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[kode_kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="9" width="100" height="20" uuid="d5653d1b-23fc-422d-9f4b-d4dab391864a"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nama_kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="9" width="36" height="20" uuid="efdd0ef2-8e78-4e9d-9b74-5e6e56f52ad5"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="198" y="0" width="100" height="20" uuid="bd06c7bf-92e3-405a-abe7-72e29ca095bf"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kode_kriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="0" width="100" height="20" uuid="0e967651-32ed-46ed-8721-2b12a57cb97f"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_kriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="1" width="36" height="20" uuid="56e8c6ec-7a39-43e8-9081-5482d25d90fd"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement x="378" y="113" width="177" height="25" uuid="bc580564-46f3-4068-8016-1bff4a8b663b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[(Laits Assamarqandi Mufa, S.Si. M.Pd) ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="398" y="40" width="157" height="20" uuid="b71d92fd-acb8-47e7-8a3c-2773ca0c5bdf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Depok, " + new java.text.SimpleDateFormat("EEEE dd MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="398" y="60" width="157" height="16" uuid="fb465cb4-0113-4c82-bada-46ad82009ec5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

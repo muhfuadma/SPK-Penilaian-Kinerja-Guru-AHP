@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aa768145-ccec-4df0-88db-8383e1d3b018">
+	<property name="ireport.zoom" value="2.1435888100000016"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="310"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tb_hasilakhir]]>
+	</queryString>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Hasil_Akhir" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="139" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="18" width="134" height="121" uuid="abff308d-2df3-47d4-8a0d-f8af594c5da7"/>
+				<imageExpression><![CDATA["C:\\Users\\ASUS\\OneDrive\\Documents\\NetBeansProjects\\ProjectTA\\src\\Gambar\\logo smk yappa.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="134" y="61" width="312" height="33" uuid="516b22e9-163e-4dc3-8d45-e8c8e5d17b42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMK YAPPA DEPOK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="94" width="264" height="45" uuid="b5fe445a-b6e9-4d42-9c85-a3bf2489a9ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Jl. Proklamasi Gg. Majlis No.79 Kel. Abadijaya, Kec. Sukmajaya Kota Depok, Jawa Barat 16417]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="168" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="5d7551c0-6848-44c3-8775-af6df4a99dde"/>
+			</line>
+			<staticText>
+				<reportElement x="103" y="32" width="12" height="20" uuid="ba6feba9-3f98-4ba3-856e-6ca8d6607cc2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="32" width="100" height="20" uuid="cabc68c3-cda4-4c57-a95f-27935e2b62e4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Laporan Rangking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="32" width="100" height="20" uuid="ae09d0dc-63c6-4272-8106-4f5a9aabc171"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Hal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="112" width="132" height="20" uuid="fe42169f-217c-4148-a252-7c06126d6747"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[DATA RANGKING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="132" width="173" height="20" uuid="542b6d6b-6eb4-4084-867e-f4799f6c96e4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[TAHUN 2024/2025]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="312" y="0" width="134" height="20" uuid="fb74dd70-4981-455c-9c74-acbc24e1d177"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Hasil_Akhir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="0" width="47" height="20" uuid="7bc5cdba-138b-461f-b0d2-0f24b137cc28"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Rangking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="162" height="20" uuid="eddedcbf-4b5d-4544-a849-39095c504358"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="312" y="-1" width="134" height="21" uuid="79e3e7a5-0104-4dc0-821c-006c5902998a"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Hasil_Akhir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="-1" width="47" height="22" uuid="782d0560-4656-4654-9456-a9d4e27a4d4f"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="162" height="21" uuid="15f57884-2043-4a5d-83de-077f2161bcfb"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="378" y="116" width="177" height="22" uuid="0b1b259a-d4f4-42f8-875b-1a50a7988660"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[(Laits Assamarqandi Mufa, S.Si. M.Pd) ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="398" y="34" width="157" height="20" uuid="35fa5342-85cd-494c-8c8f-edbb30c68e49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Depok, " + new java.text.SimpleDateFormat("EEEE dd MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="434" y="54" width="71" height="20" uuid="cb271106-ced0-467d-ab59-b4f1574ec858"/>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
